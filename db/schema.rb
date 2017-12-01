@@ -13,6 +13,10 @@
 ActiveRecord::Schema.define(version: 20171024134517) do
 
   create_table "photos", force: :cascade do |t|
+    t.string "title"
+    t.date "date"
+    t.text "description"
+    t.string "file_location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
